@@ -151,3 +151,9 @@
         margin: auto;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-rows: auto 40px 80px 80px 20px auto;
+    }
+}
