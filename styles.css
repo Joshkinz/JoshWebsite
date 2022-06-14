@@ -66,10 +66,10 @@
 
 .grid-container {
     display: grid;
-    padding: 2rem;
+    padding: 1rem 2rem;
     grid-template-columns: auto 1fr;
-    grid-template-rows: 20px auto auto auto;
-    grid-gap: 5rem;
+    grid-template-rows: 40px 100px 80px auto;
+    grid-gap: 2.5rem;
     grid-template-areas:
         "picture header"
         "picture body-1"
@@ -80,6 +80,13 @@
 
 .josh-picture {
     grid-area: picture;
+    margin: auto;
+}
+
+.josh-mobile {
+    grid-area: picture-mobile;
+    margin: auto;
+    display: none;
 }
 
 .header {
@@ -111,15 +118,36 @@
 
     .grid-container {
         display: grid;
-        padding: 2rem;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto auto auto;
-        grid-gap: 5rem;
+        padding: 1rem 2rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto 40px 40px 40px 20px auto;
+        grid-gap: 2.5rem;
         grid-template-areas:
             "picture"
             "header"
             "body-1"
             "body-2"
             "body-3"
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-rows: auto 40px 60px 60px 20px auto;
+        grid-template-areas:
+            "picture-mobile"
+            "header"
+            "body-1"
+            "body-2"
+            "body-3"
+    }
+
+    .josh-picture {
+        display: none;
+    }
+
+    .josh-mobile {
+        display: block;
+        margin: auto;
     }
 }
