@@ -1,0 +1,43 @@
+.container {
+    margin: 0px;
+}
+
+.entry {
+    width: 265px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.calc-container {
+   width: 320px;
+   background-color: rgb(9, 114, 138);
+   border-radius: 20px;
+   padding: 30px;
+   margin-top: 10px; 
+   margin-bottom: 10px;
+}
+
+.numButton {
+    height: 59px;
+    width: 59px;
+    margin: 5px 4px;
+    border: none !important;
+}
+
+.mathButton {
+    height: 59px;
+    width: 59px;
+    margin: 5px 4px;
+    border: none !important;
+}
+
+.equalButton {
+    height: 59px;
+    width: 100px;
+    margin: 5px 4px;
+    border: none !important;
+}
