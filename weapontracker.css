@@ -2,10 +2,6 @@
     padding: 5px;
 }
 
-.checkmark {
-    height: 20px;
-}
-
 #hydaelyn {
     display: grid;
     grid-gap: 0rem 1rem;
