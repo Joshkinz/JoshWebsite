@@ -1,0 +1,9 @@
+.boss {
+    padding: 5px;
+}
+
+#hydaelyn {
+    display: grid;
+    grid-gap: 0rem 1rem;
+    grid-template-columns: auto 1fr;
+}
