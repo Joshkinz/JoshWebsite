@@ -10,12 +10,7 @@
     <link rel="stylesheet" href="weapontracker.css">
     <script src="weapontracker.js"></script>
 </head>
-<body>
-    <script src="weapontracker.js">
-        HYD_WEAPONS.forEach(weapon => {
-            addWeaponInputRow(weapon.id, weapon.clss, weapon.funct, weapon.src, weapon.name);
-        })
-    </script>
+<body onload="drawHydWeps()">
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo">Joshua Eastin</a>
@@ -39,45 +34,6 @@
         <p id="obtained">Total Obtained: 0</p>
     </div>
     <div class="boss" id="hydaelyn">
-        
-
-        <input type="checkbox" id="hydCheck" class="hydPLD" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\tank\PLD.png"></a>
-        <label class="hydMNK">Bastard Sword of Divine Light</label>
-
-        <input type="checkbox" id="hydCheck" class="hydWAR" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\tank\WAR.png"></a>
-        <label class="hydMNK">Labrys of Divine Light</label>
-
-        <input type="checkbox" id="hydCheck" class="hydDRK" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\tank\DRK.png"></a>
-        <label class="hydMNK">Greatsword of Divine Light</label>
-
-        <input type="checkbox" id="hydCheck" class="hydGNB" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\tank\GNB.png"></a>
-        <label class="hydMNK">Gunblade of Divine Light</label>
-
-        <input type="checkbox" id="hydCheck" class="hydMNK" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\dps\MNK.png"></a>
-        <label class="hydMNK">Sainti of Divine Light</label>
-
-        <input type="checkbox" id="hydCheck" class="hydDRG" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\dps\DRG.png"></a>
-        <label class="hydMNK">Partisan of Divine Light</label>
-
-        <input type="checkbox" id="hydCheck" class="hydNIN" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\dps\NIN.png"></a>
-        <label class="hydMNK">Daggers of Divine Light</label>
-
-        <input type="checkbox" id="hydCheck" class="hydSAM" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\dps\SAM.png"></a>
-        <label class="hydMNK">Blade of Divine Light</label>
-
-        <input type="checkbox" id="hydCheck" class="hydRPR" onclick="clickHydaelyn()">
-        <img id="classIcon" src="images\icons\dps\RPR.png"></a>
-        <label class="hydMNK">War Scythe of Divine Light</label>
-
-        
         
     </div>
     
