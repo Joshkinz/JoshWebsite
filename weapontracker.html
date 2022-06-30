@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="weapontracker.css">
     <script src="weapontracker.js"></script>
 </head>
-<body onload="drawHydWeps()">
+<body onload="pageLoadDrawWeps()">
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo">Joshua Eastin</a>
@@ -29,12 +29,16 @@
             </ul>
         </div>
     </nav>
-    <div><h3 id="hydPercent">Hydaelyn - 0%</h3></div>
-    <div>
-        <p id="obtained">Total Obtained: 0</p>
+    <div id="endwalker-bosses">
+        <div>
+            <div><h3 id="hydPercent">Hydaelyn - 0%</h3></div>
+            <div class="boss" id="hydaelyn"></div>
+        </div>
+        <div>
+            <div><h3 id="endPercent">Endsinger - 0%</h3></div>
+            <div class="boss" id="endsinger"></div>
+        </div>
     </div>
-    <div class="boss" id="hydaelyn">
-        
     </div>
     
     

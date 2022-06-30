@@ -1,8 +1,5 @@
 .boss {
     padding: 5px;
-}
-
-#hydaelyn {
     display: grid;
     grid-gap: 0rem 1rem;
     grid-template-columns: auto auto 1fr;
@@ -10,4 +7,9 @@
 
 #classIcon {
     max-height: 20px;
+}
+
+#endwalker-bosses {
+    display: grid;
+    grid-template-columns: auto auto;
 }
