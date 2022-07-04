@@ -5,11 +5,14 @@
     grid-template-columns: auto auto 1fr;
 }
 
-#classIcon {
-    max-height: 20px;
-}
-
-#endwalker-bosses {
+.bosses {
     display: grid;
     grid-template-columns: auto auto;
+    padding: 1rem;
+    width: 95%;
+    justify-content: space-around;
+}
+
+#classIcon {
+    max-height: 20px;
 }

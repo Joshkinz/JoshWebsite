@@ -104,6 +104,10 @@
     grid-area: body-3;
 }
 
+.project-list {
+    padding: 1rem;
+}
+
 @media screen and (max-width: 960px) {
     .navbar__container {
         display: flex;
