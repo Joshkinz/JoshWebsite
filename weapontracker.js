@@ -1,3 +1,263 @@
+//Shadowbringers Bosses
+const TIT_WEPS = [
+    {
+        id: 'titCheck',
+        class: 'titPLD',
+        boss: 'TITANIA',
+        src: 'images/icons/tank/PLD.png',
+        name: "The King's Sword",
+    },
+    {
+        id: 'titCheck',
+        class: 'titWAR',
+        boss: 'TITANIA',
+        src: 'images/icons/tank/WAR.png',
+        name: "The King's Axe",
+    },
+    {
+        id: 'titCheck',
+        class: 'titDRK',
+        boss: 'TITANIA',
+        src: 'images/icons/tank/DRK.png',
+        name: "The King's Guillotine",
+    },
+    {
+        id: 'titCheck',
+        class: 'titGNB',
+        boss: 'TITANIA',
+        src: 'images/icons/tank/GNB.png',
+        name: "The King's Manatrigger",
+    },
+    {
+        id: 'titCheck',
+        class: 'titWHM',
+        boss: 'TITANIA',
+        src: 'images/icons/healer/WHM.png',
+        name: "The King's Cane",
+    },
+    {
+        id: 'titCheck',
+        class: 'titSCH',
+        boss: 'TITANIA',
+        src: 'images/icons/healer/SCH.png',
+        name: "The King's Codex",
+    },
+    {
+        id: 'titCheck',
+        class: 'titAST',
+        boss: 'TITANIA',
+        src: 'images/icons/healer/AST.png',
+        name: "The King's Starglobe",
+    },
+    {
+        id: 'titCheck',
+        class: 'titMNK',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/MNK.png',
+        name: "The King's Claws",
+    },
+    {
+        id: 'titCheck',
+        class: 'titDRG',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/DRG.png',
+        name: "The King's Spear",
+    },
+    {
+        id: 'titCheck',
+        class: 'titNIN',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/NIN.png',
+        name: "The King's Cleavers",
+    },
+    {
+        id: 'titCheck',
+        class: 'titSAM',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/SAM.png',
+        name: "The King's Katana",
+    },
+    {
+        id: 'titCheck',
+        class: 'titBRD',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/BRD.png',
+        name: "The King's Longbow",
+    },
+    {
+        id: 'titCheck',
+        class: 'titMCH',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/MCH.png',
+        name: "The King's Handgonne",
+    },
+    {
+        id: 'titCheck',
+        class: 'titDNC',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/DNC.png',
+        name: "The King's Tathlums",
+    },
+    {
+        id: 'titCheck',
+        class: 'titBLM',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/BLM.png',
+        name: "The King's Rod",
+    },
+    {
+        id: 'titCheck',
+        class: 'titSMN',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/SMN.png',
+        name: "The King's Grimoire",
+    },
+    {
+        id: 'titCheck',
+        class: 'titRDM',
+        boss: 'TITANIA',
+        src: 'images/icons/dps/RDM.png',
+        name: "The King's Rapier",
+    },
+]
+
+const HAD_WEPS = [
+    {
+        id: 'hadCheck',
+        class: 'hadPLD',
+        boss: 'HADES',
+        src: 'images/icons/tank/PLD.png',
+        name: "Misos",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadWAR',
+        boss: 'HADES',
+        src: 'images/icons/tank/WAR.png',
+        name: "Thumosis",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadDRK',
+        boss: 'HADES',
+        src: 'images/icons/tank/DRK.png',
+        name: "Eleos",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadGNB',
+        boss: 'HADES',
+        src: 'images/icons/tank/GNB.png',
+        name: "Odune",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadWHM',
+        boss: 'HADES',
+        src: 'images/icons/healer/WHM.png',
+        name: "Kelesis",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadSCH',
+        boss: 'HADES',
+        src: 'images/icons/healer/SCH.png',
+        name: "Enochlesis",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadAST',
+        boss: 'HADES',
+        src: 'images/icons/healer/AST.png',
+        name: "Himeros",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadMNK',
+        boss: 'HADES',
+        src: 'images/icons/dps/MNK.png',
+        name: "Zelos",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadDRG',
+        boss: 'HADES',
+        src: 'images/icons/dps/DRG.png',
+        name: "Menis",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadNIN',
+        boss: 'HADES',
+        src: 'images/icons/dps/NIN.png',
+        name: "Phthonos",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadSAM',
+        boss: 'HADES',
+        src: 'images/icons/dps/SAM.png',
+        name: "Aischune",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadBRD',
+        boss: 'HADES',
+        src: 'images/icons/dps/BRD.png',
+        name: "Deima",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadMCH',
+        boss: 'HADES',
+        src: 'images/icons/dps/MCH.png',
+        name: "Ekplexis",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadDNC',
+        boss: 'HADES',
+        src: 'images/icons/dps/DNC.png',
+        name: "Zelotupia",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadBLM',
+        boss: 'HADES',
+        src: 'images/icons/dps/BLM.png',
+        name: "Oknos",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadSMN',
+        boss: 'HADES',
+        src: 'images/icons/dps/SMN.png',
+        name: "Epikairekakia",
+    },
+    {
+        id: 'hadCheck',
+        class: 'hadRDM',
+        boss: 'HADES',
+        src: 'images/icons/dps/RDM.png',
+        name: "Agonia",
+    },
+]
+
+const TITANIA = {
+    id: 'titCheck',
+    class: 'titPercent',
+    name: 'Titania',
+    array: TIT_WEPS,
+}
+
+const HADES = {
+    id: 'hadCheck',
+    class: 'hadPercent',
+    name: 'Hades',
+    array: HAD_WEPS,
+}
+
+//Endwalker Bosses
 const HYD_WEPS = [
     {
         id: 'hydCheck',
@@ -340,6 +600,10 @@ function pageLoadDrawWeps() {
     updatePercent(HYDAELYN);
     drawWeps(END_WEPS, 'endsinger');
     updatePercent(ENDSINGER);
+    drawWeps(TIT_WEPS, 'titania');
+    updatePercent(TITANIA);
+    drawWeps(HAD_WEPS, 'hades');
+    updatePercent(HADES);
 }
 
 function setCookie(cname, cvalue, exdays) {

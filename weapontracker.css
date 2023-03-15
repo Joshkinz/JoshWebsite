@@ -10,9 +10,23 @@
     grid-template-columns: auto auto;
     padding: 1rem;
     width: 95%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #classIcon {
     max-height: 20px;
+}
+
+.expansion-logo {
+    width: 50%
+}
+
+@media screen and (max-width: 600px) {
+    .bosses {
+        grid-template-columns: auto;
+    }
+
+    .expansion-logo {
+        width: 80%
+    }
 }
